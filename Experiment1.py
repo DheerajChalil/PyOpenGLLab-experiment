@@ -16,8 +16,8 @@ def horizontal():
     glPointSize(4.0)
     glColor3f(0.0, 0.0, 1.0)
     glBegin(GL_POINTS)
-    for x1 in range(x2):
-        glVertex2i(x1,y)    
+    for j in range(x1,x2):
+        glVertex2i(j,y)    
     glEnd()
     glFlush()
 
@@ -26,8 +26,8 @@ def vertical():
     glPointSize(4.0)
     glColor3f(0.0, 1.0, 0.0)
     glBegin(GL_POINTS)
-    for y1 in range(y2):
-        glVertex2i(x,y1)    
+    for k in range(y1,y2):
+        glVertex2i(x,k)    
     glEnd()
     glFlush()
 
@@ -36,8 +36,8 @@ def diagonal():
     glPointSize(4.0)
     glColor3f(1.0, 0.0, 0.0)
     glBegin(GL_POINTS)
-    for d1 in range(d2):
-        glVertex2i(d1,d1)    
+    for i in range(d1,d2):
+        glVertex2i(i,i)    
     glEnd()
     glFlush()
 
